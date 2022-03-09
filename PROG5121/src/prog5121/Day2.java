@@ -7,12 +7,16 @@ package prog5121;
 
 /**
  *
- * @author ST10053993
+ * @author Yache
  */
 public class Day2 {
 
+    //global variables are anywhere accessible within the class
+     static int z = 10;
+
     public static void data() {
         System.out.println("Data");
+        //local variable can only get accessed within the scope of the method
         int x = 10;
         //string
         String name = "Yach";
@@ -21,7 +25,9 @@ public class Day2 {
     // mehtod to subtract two numbers
     public static void subtract(int x, int y) {
         int answer = x - y;
+        z = 10;
         System.out.println("The answer of " + x + " - " + y + " = " + answer);
+
     }
 
     //method to add two numbers
@@ -32,7 +38,7 @@ public class Day2 {
 
     //method to divide two numbers
     public static double divide(int x, int y) {
-        return (x/y);
+        return (x / y);
     }
 
     //method to multiply two numbers
@@ -41,12 +47,11 @@ public class Day2 {
         System.out.println("The answer of " + x + " * " + y + " = " + answer);
     }
     //method to write words on the screen
-    
 
     //method that takes 3 paramaters or arguments
     public static int Calculation(int a, int b, String name) {
         System.out.println("Entered name is" + name);  //print the name
         return (a + b);     //return method required for a method that returns a value 
-
     }
+
 }
