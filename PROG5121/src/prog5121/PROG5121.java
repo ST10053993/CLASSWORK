@@ -61,7 +61,7 @@ public class PROG5121 {
         //print name and surname using print()
         System.out.print("Yache \n");
         System.out.print("Perumal \n");
-        System.out.println("\n");
+        System.out.println();
         
         //print name and surname using println()
         System.out.println("Yache");
