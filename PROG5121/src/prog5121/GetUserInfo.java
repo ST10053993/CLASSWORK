@@ -22,13 +22,11 @@ public class GetUserInfo {
         String school;
         String result;
         String today;
+        String birthday;
 
         //dialog box method 1
         result = JOptionPane.showInputDialog(null, "What is your name?");
         JOptionPane.showMessageDialog(null, "Hello, " + result + "");
-        //dialog box method 2 
-        today = JOptionPane.showInputDialog(null, "What is todays date?");
-        JOptionPane.showMessageDialog(null, "Today is March " + today + ".");
 
         //prompts asking user to input data, takes keyboard inut and outputs the information
         Scanner inputDevice = new Scanner(System.in);
@@ -41,9 +39,18 @@ public class GetUserInfo {
         System.out.println("Please enter where you study >>");
         inputDevice.nextLine();
         school = inputDevice.nextLine();
+        
+        //new scanner input method
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your rate");
+        int rate = input.nextInt();
+        
+        //new string
+        String number = "90";
+        int x = Integer.parseInt(number);
 
         //final print statement
-        System.out.println("your name is " + name + " and I am " + age + " years old and my student number is " + stNum + " and my school is " + school);
+        System.out.println("your name is " + name + " and I am " + age + " years old and my student number is " + stNum + " and my school is " + school + " and my rate is " + rate);
     }
 
 }
